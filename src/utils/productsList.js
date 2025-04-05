@@ -1,0 +1,31 @@
+const products = [
+    {name: 'Hot chocolate Powder', quantity: 4, unit: 'weeks', category: 'powder'},
+    {name: 'Frappe Powder', quantity: 12, unit: 'weeks', category: 'powder'},
+    {name: 'Caramel Syrup', quantity: 12, unit: 'weeks', category: 'syrup'},
+    {name: 'Vanilla Syrup', quantity: 12, unit: 'weeks', category: 'syrup'},
+    {name: 'Hazelnut Syrup', quantity: 12, unit: 'weeks', category: 'syrup'},
+    {name: 'Cinnamon Syrup', quantity: 12, unit: 'weeks', category: 'syrup'},
+    {name: 'SF Caramel Syrup', quantity: 12, unit: 'weeks', category: 'syrup'},
+    {name: 'SF Vanilla Syrup', quantity: 12, unit: 'weeks', category: 'syrup'},
+    {name: 'Monin SF Syrup', quantity: 3, unit: 'months', category: 'syrup'},
+    {name: 'White Chocolate Sauce', quantity: 8 , unit:'weeks', category: 'sauce'},
+    {name: 'Spiced Chai', quantity: 3, unit:'months', category: 'syrup'},
+    {name: 'Salted Caramel Sauce', quantity: 12, unit:'weeks', category: 'sauce'},
+    {name: 'Strawberry Sauce', quantity: 12, unit:'weeks', category: 'sauce'},
+    {name: 'Monin Peach Syrup', quantity: 3, unit:'months', category: 'syrup'},
+    {name: 'Mocha Coffee Bag', quantity: 48, unit:'hours', category: 'coffee'},
+    {name: 'Instant Coffee', quantity: 4, unit:'weeks', category: 'coffee'},
+    {name: 'Capuccino Dusting', quantity: 4, unit:'weeks', category: 'powder'},
+    {name: 'Mango Bubbles', quantity: 2, unit:'weeks', category: 'chilled'},
+    {name: 'Fruit Cooler', quantity: 5, unit:'days', category: 'chilled'},
+    {name: 'Marshmallows - See Box', quantity: null, unit: null, category: 'misc'},
+    {name: 'Tea Bags', quantity: 3, unit:'months', category: 'tea'},
+    {name: 'Lemon & Orange Slices', quantity: 4, unit:'weeks', category: 'chilled'},
+    {name: 'Cinnamon Sticks', quantity: 6, unit:'months', category: 'misc'},
+    {name: 'Light Whip - Open Carton', quantity: 5, unit:'days', category: 'dairy'},
+    {name: 'Light Whip - Whipped', quantity: 24, unit:'hours', category: 'dairy'},
+    {name: 'Whipping Cream', quantity: 3, unit:'days', category: 'dairy'},
+    {name: 'Water in Jug', quantity: 24, unit:'hours', category: 'misc'}
+]
+
+export default products

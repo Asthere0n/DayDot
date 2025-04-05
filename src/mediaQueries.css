@@ -1,0 +1,40 @@
+@media screen and (max-width: 1000px) {
+#layout{
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 400px 1fr 30px;
+    grid-template-areas: 
+    'TITLE'
+    'DISPLAY'
+    'SCROLL'
+    'FOOTER';
+}
+
+#Header{
+    #title{
+        font-size: xx-large;
+    }
+    .printButton{
+        margin-right: 10px;
+        scale: 0.8;
+    }
+}
+
+
+#content{
+    border-bottom: 5px black solid;
+    box-shadow: 5px 5px 5px hsl(0, 0, 20);
+    h2{
+        font-size: 30px;
+    }
+}
+
+.productButton{
+    height: 80px;
+    font-size: 20px;
+}
+
+#Daydot{
+    height: 200px;
+    width: 200px;
+}
+}
