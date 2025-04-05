@@ -9,6 +9,10 @@
 body, #root{
   width: 100%;
   height: 100dvh;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  overflow: hidden;
 }
 
 #layout{
