@@ -21,7 +21,7 @@ function Daydot(props){
         <div id="content" >
             <h2>{productToLabel.name}</h2>
             <div id="Daydot" style={{ backgroundColor: dayColor[expiringWeekDay] }}>
-                <h3>{weekday[expiringWeekDay]}</h3>
+                <h3 style={expiringWeekDay == 1 || expiringWeekDay == 5? {color:'black'}:{color:'white'}}>{weekday[expiringWeekDay]}</h3>
                 <p>{expiringFormatted}</p>
             </div>
         </div>

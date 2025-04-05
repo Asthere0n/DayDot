@@ -35,6 +35,7 @@ body, #root{
   align-items: center;
   background-image: url(../public/wickedbackground.png);
   background-size: cover;
+  background-position-y: -50px;
 }
 #title{
   flex-grow: 1;
