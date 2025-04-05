@@ -1,10 +1,9 @@
+import PrintToPDF from "../utils/printToPDF";
+
 function PrintButton() {
-    const print = () => {
-        console.log("Print the dotpage");
-    };
 
     return (
-        <button className="printButton" onClick={print}>
+        <button className="printButton" onClick={PrintToPDF}>
             <svg
                 width="64px"
                 height="64px"

@@ -19,7 +19,7 @@ const productsList = [
     { name: 'Mango Bubbles', quantity: 2, unit: 'weeks', category: 'chilled' },
     { name: 'Fruit Cooler', quantity: 5, unit: 'days', category: 'chilled' },
     { name: 'Tea Bags', quantity: 3, unit: 'months', category: 'tea' },
-    { name: 'Fruited Teacake', quantity: 12, units: 'hours', category: 'cake' },
+    { name: 'Fruited Teacake', quantity: 12, unit: 'hours', category: 'cake' },
     { name: 'Blueberry Muffin', quantity: 24, unit: 'hours', category: 'cake' },
     { name: 'Lemon Muffin', quantity: 24, unit: 'hours', category: 'cake' },
     { name: 'Chocolate Muffin', quantity: 24, unit: 'hours', category: 'cake' },

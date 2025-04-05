@@ -10,7 +10,6 @@ import CakeIcon from "../components/svg/CakeIcon"
 import PastryIcon from "../components/svg/PastryIcon"
 
 function AddCategoryIcon(props){
-    console.log(props.category)
     switch (props.category) {
         case 'chilled':
             return (
