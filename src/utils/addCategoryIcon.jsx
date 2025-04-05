@@ -6,6 +6,8 @@ import PowderIcon from "../components/svg/PowderIcon";
 import SauceIcon from "../components/svg/SauceIcon";
 import SyrupIcon from "../components/svg/SyrupIcon";
 import TeaIcon from "../components/svg/TeaIcon";
+import CakeIcon from "../components/svg/CakeIcon"
+import PastryIcon from "../components/svg/PastryIcon"
 
 function AddCategoryIcon(props){
     console.log(props.category)
@@ -41,6 +43,14 @@ function AddCategoryIcon(props){
         case 'tea':
             return (
             <TeaIcon />
+            )
+        case 'cake':
+            return (
+            <CakeIcon />
+            )
+        case 'pastry':
+            return (
+            <PastryIcon />
             )
         default:
             return(<></>)

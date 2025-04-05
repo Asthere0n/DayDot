@@ -62,7 +62,7 @@
 }
 .productButton{
   flex-grow: 1;
-  height: 60px;
+  height: 80px;
   font-size: 24px;
   padding: 0;
   color: black;
@@ -131,7 +131,36 @@ h2{
   }
 }
 
-
+.chilled{
+  background-color: #b0f1ff;
+}
+.coffee{
+  background-color: #ffb694;
+}
+.dairy{
+  background-color: #beb1fc;
+}
+.misc{
+  background-color: #dcb9ff;
+}
+.powder{
+  background-color: #dddddd;
+}
+.sauce{
+  background-color: #ffb6ca;
+}
+.syrup{
+  background-color: #fff6da;
+}
+.tea{
+  background-color: #72ff7e;
+}
+.pastry{
+  background-color: #cbffec;
+}
+.cake{
+  background-color: #ff9ec8;
+}
 
 #Footer{
   grid-area: FOOTER;
