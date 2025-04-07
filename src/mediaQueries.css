@@ -37,6 +37,19 @@
     height: 200px;
     width: 200px;
 }
+#itemList{
+    grid-template-columns: 90px 1fr;
+    grid-template-rows: 1fr;
+}
+#filter-list{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .filter{
+        flex-grow: 1;
+    }
+}
+
 }
 
 @media screen and (max-width: 600px){

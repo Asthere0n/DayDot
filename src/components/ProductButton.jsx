@@ -12,7 +12,7 @@ function ProductButton(props){
     }
 
 
-    return <li><button key={product.name} className={`productButton ${product.category}`} data-productname={product.name} onClick={handleClick}><AddCategoryIcon category={product.category}/>{product.name}</button></li>
+    return <li><button key={product.name} className={`productButton ${product.category}`} data-productname={product.name} onClick={handleClick}>{product.name}</button></li>
 }
 
 export default ProductButton
