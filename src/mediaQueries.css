@@ -54,7 +54,13 @@
 
 @media screen and (max-width: 600px){
     #layout{
-        grid-template-rows: 80px 250px 1fr 30px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 250px 1fr 24px;
+        grid-template-areas: 
+        'TITLE'
+        'DISPLAY'
+        'SCROLL'
+        'FOOTER';
     }
 
     #content{
@@ -69,7 +75,7 @@
         width: 150px;
         font-size: 20px;
     }
-    .iconSVG{
+    .IconSVG{
         height: 24px;
         width: 24px;
     }
