@@ -19,10 +19,8 @@
     }
 }
 
-
-
 .productButton{
-    height: 80px;
+    height: 60px;
     font-size: 20px;
 }
 #content{
@@ -38,17 +36,19 @@
     width: 200px;
 }
 #itemList{
-    grid-template-columns: 90px 1fr;
+    grid-template-columns: 60px 1fr;
     grid-template-rows: 1fr;
+}
+.filter{
+    padding: 0;
+    flex-grow: 1;
 }
 #filter-list{
     height: 100%;
     display: flex;
     flex-direction: column;
-    .filter{
-        flex-grow: 1;
-    }
 }
+
 
 }
 

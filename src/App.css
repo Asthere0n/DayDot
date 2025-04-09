@@ -1,4 +1,4 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: content-box;
@@ -6,7 +6,9 @@
   text-decoration: none;
   border: none;
 }
-body, #root{
+
+body,
+#root {
   width: 100%;
   height: 100dvh;
   display: flex;
@@ -15,20 +17,20 @@ body, #root{
   overflow: hidden;
 }
 
-#layout{
+#layout {
   width: 100%;
   height: 100dvh;
   overflow: hidden;
   display: grid;
   grid-template-columns: 30% 1fr;
   grid-template-rows: 100px 1fr 30px;
-  grid-template-areas: 
-  'TITLE TITLE'
-  'SCROLL DISPLAY'
-  'FOOTER FOOTER';
+  grid-template-areas:
+    'TITLE TITLE'
+    'SCROLL DISPLAY'
+    'FOOTER FOOTER';
 }
 
-#Header{
+#Header {
   grid-area: TITLE;
   display: flex;
   justify-content: space-between;
@@ -37,14 +39,16 @@ body, #root{
   background-size: cover;
   background-position-y: -50px;
 }
-#title{
+
+#title {
   flex-grow: 1;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.printButton{
+
+.printButton {
   margin-right: 50px;
   width: 80px;
   padding: 0;
@@ -52,48 +56,54 @@ body, #root{
   box-shadow: #333 3px 3px 3px;
   transition: all 0.3s;
 }
-.printButton:hover{
+
+.printButton:hover {
   background-color: #999;
   box-shadow: none;
 }
 
-#itemList{
+#itemList {
   grid-area: SCROLL;
   display: grid;
   grid-template-rows: 150px 1fr;
   overflow-y: hidden;
   overflow-x: hidden;
-  li{
+
+  li {
     display: flex;
   }
 }
-#filter-list{
+
+#filter-list {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); 
+  grid-template-columns: repeat(5, 1fr);
   border: 2px solid black;
 }
-.filter{
+
+.filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
   border-radius: 0;
-  transition: all 0.3s ;
+  transition: all 0.3s;
   border: none;
-  .IconSVG{
-    height: 30px;
-    width: 30px;
-    transition: all 0.3s;
-  }
 }
-.filter:hover, .filter:active{
+.filter:hover,
+.filter:active {
   box-shadow: #333 3px 3px 5px inset;
-  .IconSVG{
+
+  .IconSVG {
     scale: 1.5;
   }
 }
-#productScroll{
+
+#productScroll {
   overflow-y: scroll;
-  
+  background-color: #333333;
 }
-.productButton{
+
+.productButton {
   flex-grow: 1;
   height: 80px;
   font-size: 24px;
@@ -109,29 +119,33 @@ body, #root{
   justify-content: flex-start;
   align-items: center;
 }
-.productButton:hover{
+
+.productButton:hover {
   background-color: #ddd;
 }
-.IconSVG{
-  height: 48px;
-  width: 48px;
-  margin-inline: 20px;
+
+.IconSVG {
+  height: 32px;
+  width: 32px;
+  transition: all 0.3s;
 }
 
-#content{
-grid-area: DISPLAY;
-width: 100%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-background-color: #f0f0f0;
-h2{
-  font-size: 40px;
-  color: black;
+#content {
+  grid-area: DISPLAY;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+
+  h2 {
+    font-size: 40px;
+    color: black;
+  }
 }
-}
-#Daydot{
+
+#Daydot {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -143,14 +157,16 @@ h2{
   width: 300px;
   border-radius: 20px;
   margin-top: 20px;
-  h3{
+
+  h3 {
     flex-grow: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 60px;
   }
-  p{
+
+  p {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -164,38 +180,47 @@ h2{
   }
 }
 
-.chilled{
+.chilled {
   background-color: #b0f1ff;
 }
-.coffee{
+
+.coffee {
   background-color: #ffb694;
 }
-.dairy{
+
+.dairy {
   background-color: #beb1fc;
 }
-.misc{
+
+.misc {
   background-color: #dcb9ff;
 }
-.powder{
+
+.powder {
   background-color: #dddddd;
 }
-.sauce{
+
+.sauce {
   background-color: #ffb6ca;
 }
-.syrup{
+
+.syrup {
   background-color: #fff6da;
 }
-.tea{
+
+.tea {
   background-color: #72ff7e;
 }
-.pastry{
+
+.pastry {
   background-color: #cbffec;
 }
-.cake{
+
+.cake {
   background-color: #ff9ec8;
 }
 
-#Footer{
+#Footer {
   grid-area: FOOTER;
   display: flex;
   justify-content: center;

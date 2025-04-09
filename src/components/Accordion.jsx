@@ -1,3 +1,4 @@
+import { useState } from "react";
 import productsList from "../utils/productsList"
 import ProductButton from "./ProductButton"
 import CakeIcon from "./svg/CakeIcon";
@@ -13,12 +14,20 @@ import TeaIcon from "./svg/TeaIcon";
 
 
 function Accordion(props) {
-    let productAccordion = productsList.sort((a, b) => a.name.localeCompare(b.name));
-    productAccordion = productAccordion.map(product => (
+    const [productAccordion, setProductAccordion] = useState(productsList.sort((a, b) => a.name.localeCompare(b.name)))
+    const [activeCategory, setActiveCategory] = useState(null)
+    const scroll = productAccordion.map(product => (
         <ProductButton key={product.id} product={product} onProductSelect={props.onProductSelect} />
     ));
 
     const productFiltering = (category) => {
+        if(activeCategory == null || activeCategory != category){
+            setProductAccordion(productsList.filter((item) => item.category === category))
+            setActiveCategory(category)
+        } else {
+            setProductAccordion(productsList.sort((a, b) => a.name.localeCompare(b.name)))
+            setActiveCategory(null)
+        }
         const filteredList = productsList.filter((item) => item.category === category)   
         console.log(category.toUpperCase())         
         filteredList.map(item=>console.log(item.name))
@@ -38,7 +47,7 @@ function Accordion(props) {
             <button className="filter tea" onClick={()=>productFiltering("tea")}><TeaIcon /></button>
         </div>
         <div id="productScroll">
-            {productAccordion}
+            {scroll}
         </div>
     </ul>)
 }
