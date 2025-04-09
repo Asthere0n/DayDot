@@ -36,7 +36,7 @@
     width: 200px;
 }
 #itemList{
-    grid-template-columns: 60px 1fr;
+    grid-template-columns: 80px 1fr;
     grid-template-rows: 1fr;
 }
 .filter{
@@ -68,5 +68,9 @@
         height: 150px;
         width: 150px;
         font-size: 20px;
+    }
+    .iconSVG{
+        height: 24px;
+        width: 24px;
     }
 }
